@@ -1,0 +1,25 @@
+{
+  "version": 8,
+  "glyphs":"mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
+  "sources": {
+      "google_satellite": {
+          "type": "raster",
+          "tiles": [
+            "https://mt0.google.com/vt/lyrs=s&hl=en&x={x}&y={y}&z={z}&s=Ga",
+            "https://mt1.google.com/vt/lyrs=s&hl=en&x={x}&y={y}&z={z}&s=Ga",
+            "https://mt2.google.com/vt/lyrs=s&hl=en&x={x}&y={y}&z={z}&s=Ga",
+            "https://mt3.google.com/vt/lyrs=s&hl=en&x={x}&y={y}&z={z}&s=Ga"
+            ],
+          "tileSize": 256
+      }
+  },
+  "layers": [
+      {
+          "id": "google_satellite",
+          "type": "raster",
+          "source": "google_satellite",
+          "minzoom": 0,
+          "maxzoom": 22
+      }
+  ]
+}

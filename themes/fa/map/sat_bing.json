@@ -1,0 +1,24 @@
+{
+  "version": 8,
+  "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
+  "sources": {
+    "bing_satellite": {
+      "type": "raster",
+      "tiles": [
+        "https://ecn.t0.tiles.virtualearth.net/tiles/a{quadkey}.jpeg?g=587&mkt=en-gb&n=z",
+        "https://ecn.t1.tiles.virtualearth.net/tiles/a{quadkey}.jpeg?g=587&mkt=en-gb&n=z",
+        "https://ecn.t2.tiles.virtualearth.net/tiles/a{quadkey}.jpeg?g=587&mkt=en-gb&n=z",
+        "https://ecn.t3.tiles.virtualearth.net/tiles/a{quadkey}.jpeg?g=587&mkt=en-gb&n=z"
+      ]
+    }
+  },
+  "layers": [
+    {
+      "id": "bing_satellite",
+      "type": "raster",
+      "source": "bing_satellite",
+      "minzoom": 0,
+      "maxzoom": 22
+    }
+  ]
+}
